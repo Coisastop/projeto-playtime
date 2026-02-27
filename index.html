@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>PROJETO PLAYTIME</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    background:linear-gradient(180deg,#000,#140000);
+    color:white;
+    font-family:'Orbitron',sans-serif;
+    overflow-x:hidden;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:#000;
+    border-bottom:3px solid #8b0000;
+}
+
+.glitch{
+    font-size:48px;
+    position:relative;
+    letter-spacing:6px;
+    text-shadow:0 0 20px red;
+}
+
+.glitch::before,.glitch::after{
+    content:attr(data-text);
+    position:absolute;
+    left:0;
+    width:100%;
+}
+
+.glitch::before{color:red;animation:glitch1 2s infinite;}
+.glitch::after{color:cyan;animation:glitch2 1.5s infinite;}
+
+@keyframes glitch1{
+0%{transform:translate(-2px,-2px);}
+50%{transform:translate(2px,2px);}
+100%{transform:translate(-1px,1px);}
+}
+
+@keyframes glitch2{
+0%{transform:translate(2px,2px);}
+50%{transform:translate(-2px,-1px);}
+100%{transform:translate(1px,-2px);}
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    font-family:'Rajdhani',sans-serif;
+}
+
+.hero h2{font-size:32px;margin-bottom:20px;}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+    color:#ccc;
+}
+
+.canal-link{
+    color:#ff2a2a;
+    font-weight:bold;
+    text-decoration:none;
+    position:relative;
+    transition:0.3s;
+}
+
+.canal-link::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0%;
+    height:2px;
+    background:red;
+    transition:0.3s;
+}
+
+.canal-link:hover{text-shadow:0 0 15px red;}
+.canal-link:hover::after{width:100%;}
+
+section{
+    padding:70px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    border-left:5px solid red;
+    padding-left:15px;
+}
+
+.card{
+    background:#111;
+    padding:25px;
+    margin-top:25px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(255,0,0,0.2);
+    transition:.4s;
+    font-family:'Rajdhani',sans-serif;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px red;
+}
+
+.vagas{
+    background:linear-gradient(180deg,#1a0000,#000);
+    border-top:3px solid red;
+    border-bottom:3px solid red;
+    box-shadow:0 0 40px rgba(255,0,0,0.4);
+}
+
+.vagas h2{
+    color:#ff4444;
+    text-shadow:0 0 15px red;
+    font-size:28px;
+}
+
+button{
+    padding:18px 40px;
+    font-size:18px;
+    background:#8b0000;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 0 20px rgba(255,0,0,0.6);
+}
+
+button:hover{
+    transform:scale(1.1);
+    background:red;
+    box-shadow:0 0 35px red;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#000;
+    color:#aaa;
+    font-size:13px;
+}
+
+.poeira{
+    position:fixed;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    opacity:0.2;
+    pointer-events:none;
+    animation:subir linear infinite;
+}
+
+@keyframes subir{
+from{transform:translateY(100vh);}
+to{transform:translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="glitch" data-text="PROJETO PLAYTIME">PROJETO PLAYTIME</div>
+</header>
+
+<div class="hero">
+<h2>Uma Reimaginação Caótica do Universo de Poppy Playtime</h2>
+
+<p>
+O <b>PROJETO PLAYTIME</b> é uma mega produção do canal 
+<a href="https://www.youtube.com/@Ennard_World" target="_blank" class="canal-link">
+EnnardWorld
+</a>, reunindo todos os capítulos em um único vídeo da zueira.
+</p>
+
+<p>
+Misturando terror, humor absurdo e dublagens originais,
+o projeto recria os eventos sombrios da Playtime Co.
+de forma caótica e criativa.
+</p>
+</div>
+
+<section>
+<h2>🎙️ Elenco Oficial</h2>
+
+<div class="card">
+<h3>MONBELLE — Poppy</h3>
+<p>Poppy é a boneca central criada pela Playtime Co., aparentando inocência mas demonstrando inteligência e intenções ambíguas.</p>
+</div>
+
+<div class="card">
+<h3>DYINGODMAN — Narrador VHS, Doutor, VHS Mans</h3>
+<p>Representa os registros secretos e os cientistas por trás dos experimentos proibidos da fábrica.</p>
+</div>
+
+<div class="card">
+<h3>CRONOS — Huggy Wuggy</h3>
+<p>O brinquedo perfeito que se tornou o primeiro grande símbolo do terror dentro da fábrica abandonada.</p>
+</div>
+
+<div class="card">
+<h3>URIEL — Doey & Experimento 1006</h3>
+<p>Ligado ao experimento mais misterioso da empresa, conectado aos eventos mais obscuros da história.</p>
+</div>
+
+<div class="card">
+<h3>TOYBONNIEZ — DogDay, Bubba, Kicken Chicken</h3>
+<p>Personagens que variam entre esperança, energia e caos dentro do arco do orfanato e da fábrica.</p>
+</div>
+
+<div class="card">
+<h3>GUI — Ollie</h3>
+<p>Figura de suporte que auxilia na condução dos acontecimentos e conecta partes importantes da narrativa.</p>
+</div>
+
+</section>
+
+<section class="vagas">
+<h2>🚨 VAGAS ABERTAS — PRECISAMOS DE DUBLADORES 🚨</h2>
+
+<div class="card">
+<h3>CatNap</h3>
+<p>Presença dominante do Capítulo 3, associado ao gás vermelho alucinógeno e controle psicológico.</p>
+</div>
+
+<div class="card">
+<h3>Mommy Long Legs</h3>
+<p>Antagonista instável do Capítulo 2, criada para entreter mas movida por obsessão e crueldade.</p>
+</div>
+
+<div class="card">
+<h3>Kissy Missy</h3>
+<p>Figura aparentemente dócil, mas ainda envolta em mistério dentro da fábrica.</p>
+</div>
+
+<div class="card">
+<h3>Mulher do Comercial</h3>
+<p>Representa a propaganda oficial da empresa, contrastando com seus segredos obscuros.</p>
+</div>
+
+<div class="card">
+<h3>Leight Pierre</h3>
+<p>Ex-executivo ligado aos bastidores da Playtime Co., associado às decisões internas da empresa.</p>
+</div>
+
+<div style="text-align:center; margin-top:40px;">
+<button onclick="window.location.href='https://mail.google.com/mail/?view=cm&fs=1&to=coisasdefnaf41@gmail.com&su=Audição%20Projeto%20Playtime&body=Olá,%20gostaria%20de%20enviar%20minha%20audição%20para%20o%20personagem:'">
+🔥 Enviar sua Audição 🔥
+</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 PROJETO PLAYTIME (Projeto não oficial)<br>
+Todos os direitos reservados para Ennard World
+</footer>
+
+<script>
+for(let i=0;i<90;i++){
+let poeira=document.createElement("div");
+poeira.className="poeira";
+poeira.style.left=Math.random()*100+"vw";
+poeira.style.animationDuration=(10+Math.random()*15)+"s";
+document.body.appendChild(poeira);
+}
+</script>
+
+</body>
+</html>
